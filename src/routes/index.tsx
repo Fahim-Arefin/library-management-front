@@ -6,6 +6,7 @@ import BookDetails from "@/pages/BookDetails";
 import { createBrowserRouter } from "react-router";
 import EditBook from "@/pages/EditBook";
 import BorrowSummaryPage from "@/pages/BorrowSummaryPage";
+import HomePage from "@/pages/HomePage";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true, // ✅ This handles the root path "/"
-        element: <div>Welcome to the Library Management System</div>,
+        element: <HomePage />, // Ensure you have a HomePage component
       },
       {
         path: "books", // ✅ No slash needed
